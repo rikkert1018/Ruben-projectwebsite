@@ -27,7 +27,7 @@ body.routes {
     stroke-miterlimit: 10;
     width: 250px;
     height: auto;
-    font-family: Poppins-ExtraLight, Poppins;
+    font-family: 'Poppins' ;
     font-size: 14.95px;
     font-weight: 200;
     padding-left: 7em;
@@ -165,8 +165,6 @@ button a {
 
 
 .maps-img-size {
-    height: 180px;
-    width: auto;
 }
 
 .maps-image {
@@ -220,10 +218,6 @@ ul {
    
 }
 
-
-
-
-
 a {
     text-decoration: none;
     color: #000;
@@ -234,17 +228,12 @@ a {
     color: #000;
 }
 
-
-
-
-
-
 nav {
     background: rgb(241, 234, 226);
     text-align: center;
     padding: 0;
     width: 100%;
-    height: 80px;
+    height: 100px;
     position: fixed;
     bottom: 0;
     margin-top: 5em;
@@ -277,10 +266,7 @@ transform: translateY(-10px);
 box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.1);
 border-top-left-radius: 25px;
 border-top-right-radius: 25px;
-
-
 }
-
 
 .nav-img {
     height: 24px ;
