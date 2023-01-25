@@ -4,7 +4,7 @@
 body.routes {
 
     overflow-x: hidden;
-    background: linear-gradient(to left, rgb(122, 90, 83), rgb(71, 56, 36));
+    background: linear-gradient(to left, rgb(107, 80, 75), rgb(83, 66, 42));
     margin: 0;
 
 }
@@ -17,7 +17,7 @@ body.routes {
     stroke-miterlimit: 10;
     width: 75px;
     height: auto;
-    margin: 1.5em 9em 0 150px;
+    margin: 1.5em 7em 0 150px;
 }
 
 .logo-index {
@@ -27,7 +27,7 @@ body.routes {
     stroke-miterlimit: 10;
     width: 250px;
     height: auto;
-    font-family: Poppins-ExtraLight, Poppins;
+    font-family: 'Poppins' ;
     font-size: 14.95px;
     font-weight: 200;
     padding-left: 7em;
@@ -46,6 +46,15 @@ h1 {
     color: rgb(241, 234, 226);
     padding-left: 0.5em;
     font-family: 'Poppins' ;
+
+}
+
+.titel-maps {
+    color: rgb(241, 234, 226);
+    padding-left: 0.5em;
+    font-family: 'Poppins' ;
+    position: sticky;
+
 
 }
 
@@ -84,6 +93,8 @@ button a {
     display: flex;
     border-radius: 25px;
     padding: 0 0 15px 0;
+    box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.47);
+
 }
 
 .bar .search {
@@ -154,12 +165,13 @@ button a {
 
 
 .maps-img-size {
-    height: 180px;
-    width: auto;
+    width: 250px ;
+    box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.1);
+   
 }
 
 .maps-image {
-    padding: 1em 0em 0 5.5em;
+padding: 0 0 0 2.6em;
 }
 
 h3 {
@@ -190,11 +202,12 @@ h4 {
     font-family: 'Poppins' ;
     padding-bottom: 2em;
     padding-top: 0.1em;
-
+    box-shadow: 10px 10px 17px 1px rgba(0,0,0,0.47);
+    
 }
-
-li {
+li.List-stops {
     padding-left: 0.5em;
+    margin-bottom: 0.5em;
     margin-right: 1em;
     margin-left: 2em;
     list-style-type: circle;
@@ -209,10 +222,6 @@ ul {
    
 }
 
-
-
-
-
 a {
     text-decoration: none;
     color: #000;
@@ -223,40 +232,46 @@ a {
     color: #000;
 }
 
-.navigation {
-    border: #000;
-}
-
 nav {
     background: rgb(241, 234, 226);
     text-align: center;
     padding: 0;
     width: 100%;
-    height: 60px;
+    height: 100px;
     position: fixed;
     bottom: 0;
-    margin-top: 5em;
+
   
 
 }
 
 nav ul {
-    list-style-type: none;
-margin: 0em 0em 0em 0em;
-border: #000;
+    list-style: none;
+margin: 0;
+display: flex;
+justify-content: space-around;
 }
-
-
-nav li {
+nav li a {
     margin: 0;
-    display: inline-block;
-    padding-left: 2em;
-    padding-right: 2em;
-    border: #000;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 1.5em;
     margin-top: 0.2em;
-   
+    background-color: rgb(241, 234, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     
 }
+nav li.active  a {
+    display: flex;
+justify-content: space-around;
+transform: translateY(-10px); 
+box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.1);
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+}
+
 .nav-img {
     height: 24px ;
     width: auto;
@@ -281,6 +296,7 @@ li.active .nav-ico {
     fill: white;
     stroke-miterlimit: 10;
     width: 40px;
+    border:#000 2px; 
 }
 
 .space {
@@ -291,6 +307,9 @@ li.active .nav-ico {
 
 .frame {
     border: none;
-    width : 375px;
+    width : 365px;
     height : 450px;
+}
+span {
+    font-family: 'Poppins' ;
 }
